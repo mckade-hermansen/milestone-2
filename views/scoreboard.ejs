@@ -1,0 +1,16 @@
+<head>
+  <title>Scoreboard</title>
+</head>
+<body>
+  <div class="container">
+    <h1> ScoreBoard</h1>
+    <div class="board">
+    <p>Username <p>Score</p></p>
+
+    <% data.forEach(function(user){ %>
+    <%=user.username%> <%=user.highscore%>
+    <% }); %>
+  </div>
+  <a href="/game">Play Again</a>  
+  </div>
+</body>
