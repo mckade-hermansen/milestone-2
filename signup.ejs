@@ -1,0 +1,23 @@
+<head>
+  <title>Login</title>
+  <link href="/css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Create An Account</h1>
+    <div class="error">
+      <% if (typeof data !== "undefined"){ %>
+        <p>Username already taken</p>
+      <% } %>
+    </div>
+    <form action="/users/new" method="post">
+      <p class="formInputTitle">Username</p>
+      <input type="text" name="username" placeholder="Enter Username">
+      <p class="formInputTitle">Password</p>
+      <input type="text" name="password" placeholder="Enter Password">
+      <input type="submit" value="SignUp!" />
+    </form>
+    <p class="signuplink">Already have an account? <a href="/">Login</a></p>
+  </div>
+</body>

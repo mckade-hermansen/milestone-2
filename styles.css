@@ -1,0 +1,12 @@
+body {
+  margin-left: 450px;
+}
+h3 {
+  padding-right: 10px;
+}
+.game-header {
+  display: flex;
+}
+.error {
+  color: red;
+}

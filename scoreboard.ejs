@@ -1,0 +1,22 @@
+<head>
+  <title>Scoreboard</title>
+  <link href="/css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1> ScoreBoard</h1>
+    <div class="board">
+    <table>
+    <tr>
+      <td><p>Username </p></td><td><p>Score</p></td>
+    </tr>
+    <% for (var i = 0; i < 10; i++){ %>
+    <tr>
+    <td><%=data[i].username%></td> <td><%=data[i].highscore%></td>
+    </tr>
+    <% } %>
+    </table>
+  </div>
+  <a href="/">Play Again</a>
+  </div>
+</body>

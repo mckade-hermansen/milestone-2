@@ -1,0 +1,24 @@
+<head>
+  <title>Login</title>
+  <link href="/css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <h1>You Must Be Logged In To Play</h1>
+    <div class="error">
+      <% if (typeof error_message !== "undefined"){ %>
+        <p>Incorrect Username/Password</p>
+
+      <% } %>
+    </div>
+    <form action="/users/login" method="post">
+      <p class="formInputTitle">Username</p>
+      <input type="text" name="username" placeholder="Enter Username">
+      <p class="formInputTitle">Password</p>
+      <input type="text" name="password" placeholder="Enter Password">
+      <input type="submit" value="Play!" />
+    </form>
+    <p class="signuplink">Don't have an account? <a href="/signup">SignUp</a></p>
+  </div>
+</body>
